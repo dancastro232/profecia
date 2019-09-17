@@ -13,7 +13,6 @@ class AddFieldsToTables < ActiveRecord::Migration[5.2]
     add_column :metrics, :agent_id, :integer
 
     add_column :varbinds, :value, :string
-    add_column :varbinds, :metric_id, :integer
     add_column :varbinds, :varbind_type, :integer
   end
 end

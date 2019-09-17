@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_16_225806) do
+ActiveRecord::Schema.define(version: 2019_09_17_004449) do
 
   create_table "agents", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2019_09_16_225806) do
     t.string "request_id"
     t.integer "varbind_id"
     t.integer "agent_id"
+    t.string "value"
   end
 
   create_table "mibs", force: :cascade do |t|
@@ -43,7 +44,6 @@ ActiveRecord::Schema.define(version: 2019_09_16_225806) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "value"
-    t.integer "metric_id"
     t.integer "varbind_type"
     t.integer "mib_id"
   end

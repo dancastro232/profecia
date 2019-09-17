@@ -1,5 +1,5 @@
 class VarbindParser
-  attr_reader :oid, :value
+  attr_reader :oid, :value, :type
 
   def initialize(oid, value: nil, type: nil, **_opts)
     @oid = OID.build(oid)
